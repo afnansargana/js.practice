@@ -1,4 +1,4 @@
-// Basic Comparison
+// Basic Comparison (Data Types)
 
 console.log(2 > 1);   // true  -> 2 is greater than 1
 console.log(2 < 1);   // false -> 2 is not less than 1
