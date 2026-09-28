@@ -42,3 +42,6 @@ const myFunction=function(){
 
 //2. Static Typing kya hoti hai?
 //Static typing mein variable ka type fixed/declared hota hai.
+//Official link to see specifications of javascript on Ecma....
+//ECMAScript 2026 — Official Specification
+//https://262.ecma-international.org/5.1/#sec-11.4.3
