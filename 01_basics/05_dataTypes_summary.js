@@ -46,3 +46,21 @@ const myFunction=function(){
 //ECMAScript 2026 — Official Specification
 //https://262.ecma-international.org/5.1/#sec-11.4.3
 //null k datatype k value object ay g......
+
+//++++++++++++++++++++++++++++++++++++++++++
+/////MEMORY/////
+//STACK (Primitive)
+//Heap (Non-primitive)
+let myYoutubename= "afnan@google.com"
+let anotherName= myYoutubename
+anotherName= "adnan@google.com"
+console.log(anotherName);
+console.log(anotherName);
+
+let userOne= {
+    email: "user@gmail.com"
+}
+let userTwo = userOne
+userTwo.email="afnan@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
