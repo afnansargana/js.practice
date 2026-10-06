@@ -1,4 +1,5 @@
 // Immediately Ivoked function expressions (IIFE)
+//"IIFE ka full form Immediately Invoked Function Expression hai. Ye aisi function hoti hai jo create hote hi immediately execute ho jati hai. Iska use mainly private scope create karne aur global scope ko unnecessary variables se avoid karne ke liye hota hai."
 // Jo function immediately execute ho jaye isay IIFE kehta hain ((Global scope k))
 // IIFE m na function wsa h likh kr bhir s () y brackets lga dni pora k is trha y IIFE BN JAE GA..
 // OR AGR IS K AGA KOI OR FUNCTION BH KRNA HO TO PHR PHLA K BAD ";" Y LGANA PRA GA WRNA ERRORR A JAE G...
