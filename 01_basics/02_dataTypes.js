@@ -23,3 +23,7 @@ let islogeIn= false
 console.log(typeof age);//datatypes k pta lgana k lia
 console.log (typeof undefined);//undefined(mcqs)
 console.log (typeof null);//datatype=object(mcqs)
+
+//Q3. JavaScript dynamically typed hai ya statically typed?
+
+//Answer: JavaScript dynamically typed language hai.(JavaScript mein variable ka data type pehle se define nahi karna padta, aur same variable mein baad mein different type ki value store kar sakte ho.)
