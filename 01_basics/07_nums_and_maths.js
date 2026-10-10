@@ -31,7 +31,7 @@ console.log(otherNumber.toPrecision(3));
 const otherNumberOne = 123.8966;
 console.log(otherNumberOne.toPrecision(3));
 // Output: 124
-// Agar number bara ho to us mein commas lagane k lia
+// Agar num ber bara ho to us mein commas lagane k lia
 // toLocaleString() use karte hain.
 // Ye given locale/standard k hisab se formatting karta hai.
 const hundreds = 1000000;
