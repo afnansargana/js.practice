@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript(Inspection 2)</title>
+</head>
+<body style="background-color: rgb(9, 9, 31); color: white">
+    
+</body>
+<script>
+    //Is triqa s hm kuch bh create kr sgta hn like div h1 heading tag etc inpect m isa dkh sgta hn wo nzr bh ay ga
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = 'box';//yha pr ak important bat y h k yha hm class likha g to create ni ho g className likhna pra g kio k hm n console k r k dkhna h..
+    // div.id = 'box';
+    // div.Math.random ()//Math librariee h is s random number add ho jay ga
+    div.id = Math.round(Math.random () * 10 +1)//Math.round() y round kr k dga or Math.random() y random number dga 0 s 1 k bch m or hm y *10 kr k 10 s 0 k bch m dkh skta hn or +1 kr k 1 s 10 k bch m dkh skta hn
+    //Agr hm n custom attribute set krna hn to ...
+    div.setAttribute('title', 'this is a box');//yha pr hm n title attribute set kr dya h or y inspect m dkh skta hn
+    div.style.backgroundColor = 'orange';//yha pr hm n style set kr dya h or y inspect m dkh skta hn
+    div.style.padding = '12px';
+    //Way 1 (to write inner Text)
+    div.innerText = 'this is a box';//yha pr hm n text set kr dya h or y inspect m dkh skta hn
+    //Way 2 (to write inner text)
+    // const addText = document.createTextNode('CHai or Code')
+    // div.appendChild(addText)
+
+    //=== Hm n jo sra likha h wo memory m h isa asl m l kr ksa ay g html page p wo yu triqa h [document.body.appendChild(div)]
+
+    document.body.appendChild(div)
+</script>
+</html>
