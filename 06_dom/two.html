@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript code(Traversing)</title>
+</head>
+<body style="background-color: rgb(9, 9, 31); color: white">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+//y hm script kr k sath isa open kra g live server pr or inspect kr k ak ak k result dkha g ..
+//Traversing...
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1]);
+    // console.log(parent.children[1].innerHTML);
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+    // }
+    parent.children[1].style.color = 'orange'//color chng
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);//Ouput=Monday
+    // console.log(dayOne.nextElementSibling);//Output= Tuesday ,y Silbing yni k is k next element ko btay ga jsa monday h is k bhai yha tuesday ho g to inspect kr k dkha g to hmy nzr a jae ga ..
+    console.log("NODES: ",  parent.childNodes)// y node dikhae ga hmy (or han y jo node hn y na hr enter p hr text next line p brha g , or hm y dkh bh dgta hn inspect kr k isa)
+</script>
+</html>
