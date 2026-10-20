@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li> 
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li> 
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick=function(){
+    //     alert("owl clicked")
+    //     }
+    // attachEvent() //internet explorer pr chlana k lia early tim m use hti th
+    //  jQuery - onEventListener()
+
+    // type, timestamp, defaultPrevented
+    //target, toElement, srcElement, currentTarget
+    //clientX, clientkey, shiftkey, keyCode
+    //altkey, ctrlkey, shiftkey, keyCode
+
+    //EventListener
+    //EventPropagation(bubbling) inside s bhir jae g
+    document.getElementById("images").addEventListener('click', function(e){
+        console.log("click inside the images");
+    },false)
+    document.getElementById("owl").addEventListener('click', function(e){
+        console.log("owl clicked");
+        e.stopPropagation()//Ispect kr k dkho ga to pta chl jae g k event bubble ho k opr ni jae g its work same to same as a default() mtlb k stop
+    },false)
+    document.getElementById("google").addEventListener('click', function(e){
+        console.log("google");
+        e.preventDefault();//is s hoa y h k google k jo link th wo ni chla bas
+        e.stopPropagation();
+    })
+    //false k mtlab h public mode is m hm inside s outside travel ho ga or agr isi k jgha (true) lga do to phr wo ho ga capturing mode(outside s inside)
+    // y jo sra kuch h y hm log inspect kr k dkh sgta hn..
+
+    //Agr kisi element ko remove krna ho to then kia krta hn...
+    document.getElementById("images").addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+            //removeIt.parentNode.removeChild(removeIt) //is s bh rmove h hna th
+        }
+        
+    })
+</script>
