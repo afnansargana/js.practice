@@ -5,17 +5,28 @@
 // console.log(myName.trim().length)// ouput = 5
 // console.log(myName.trueLength);//yhi hme=ra challege h k length y jo hm gap dt HN Y is trha bh khtm hoo sgta trim() k sath but hm n trueLength ak function bnana h ak kism k jis s is k solution mil jay...
 
+//Method:Jab kisi object ki property mein function store ho, toh usay aam tor par method kehte hain.
+// getSpiderPower: function() {
+//     console.log("Hello")
+// }
 
+//example:yha method ho rha h function m
 let myHeroes = ["thor", 'spiderman']
 //object
 let heroPower = {
     thor : 'hamer',
     spiderman : "sling",
     getSpiderPower: function(){
-        console.log(`Spidy power is ${this.spiderman}`);
-        
+        console.log(`Spidy power is ${this.spiderman}`); //(this) us object ko refer karta hai jis par method call kiya gaya hai
     }
 }
+
+//Prototype = Prototype ek object hai jiske through doosra object additional properties aur methods access kar sakta hai.
+// Object.prototype.afnan = function() {
+//     console.log("Hello Afnan");
+// };
+// let myHeroes = ["Thor", "Spiderman"];
+// myHeroes.afnan();
 
 Object.prototype.afnan= function(){
     console.log(`afnan is present in all objects`);
