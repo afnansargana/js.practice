@@ -1,5 +1,6 @@
 // Basic Comparison (Data Types)
 
+//is m hm phli condition ko judge kra g jo result is k ho ga e=whi fianl result ho ga
 console.log(2 > 1);   // true  -> 2 is greater than 1
 console.log(2 < 1);   // false -> 2 is not less than 1
 
@@ -33,6 +34,6 @@ console.log(undefined < 0);   // false
 // Strict Comparison
 // === checks BOTH value AND data type
 
-console.log("2" === 2);   // false
+console.log("2" === 2);   // false (checks data type as well)
 // "2" is String
 // 2 is Number

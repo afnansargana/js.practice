@@ -51,16 +51,21 @@ const myFunction=function(){
 /////MEMORY/////
 //STACK (Primitive)
 //Heap (Non-primitive)
+
+//stack(example)
+//primitive data ata h or original values chng ni hti...
 let myYoutubename= "afnan@google.com"
 let anotherName= myYoutubename
 anotherName= "adnan@google.com"
-console.log(anotherName);
-console.log(anotherName);
+console.log(myYoutubename);//afnan@google.com
+console.log(anotherName);//adnan@google.com
 
+//heap(example)
+//ovject k andar multiple values h or original values chng ho jati h...
 let userOne= {
     email: "user@gmail.com"
 }
 let userTwo = userOne
 userTwo.email="afnan@gmail.com"
-console.log(userOne.email);
-console.log(userTwo.email);
+console.log(userOne.email);//afnan@gmail.com
+console.log(userTwo.email);//afnan@gmail.com

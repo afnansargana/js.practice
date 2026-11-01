@@ -30,7 +30,7 @@ console.log(newString);//output=Afna
 
 //slice(picha s start kra g count krna) 
 const anotherString = gameName.slice(-6, 4); 
-console.log(anotherString);//output=Afna
+console.log(anotherString);//output=empty string (agr negative value use kra g to y piche s count krna start kra g)
 
 //trim(y function starting space end space ko remove k dta h jo k word  around hti h)
 const newStringOne = "    Afnan    "
