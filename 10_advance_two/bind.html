@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>react</title>
+  </head>
+  <body>
+    <button>Button clicked</button>
+  </body>
+  <script>
+    
+    //bind
+    //bind() ek naya function banata hai aur uske andar this ko ek particular object ke saath bind kar deta hai.
+    
+    //why we use bind
+    //Jab hum kisi object ka method doosri jagah callback ke taur par pass karte hain, to method ke andar this ki value badal sakti hai.
+
+    //it is used event listener or set timeout
+    class React{
+        //Object create kia h constructor
+        constructor(){
+            this.library = "React"
+            this.server = 'https://localhost:300'
+    
+
+        //requirement
+        document
+        .querySelector('button')
+        .addEventListener("click", this.handleClick.bind(this))
+        }
+     handleClick(){
+        console.log("button clicked"); //output = button clicked
+        console.log(this.server); //output = 'https://localhost:300'
+        console.log(this); // is m sri k sri libraries sab kuch ap seen kr sgta ho inspect kr k
+
+        }
+    }
+    const app = new React()
+
+//BIND USED
+//EVENT LISTENER
+
+//     class App {
+//     constructor() {
+//         this.username = "Afnan";
+
+//         document
+//             .querySelector("button")
+//             .addEventListener("click", this.handleClick.bind(this));
+//     }
+
+//     handleClick() {
+//         console.log(this.username);
+//     }
+// }
+
+// const app = new App();
+
+//set timeout()
+
+// class User {
+//     constructor(username) {
+//         this.username = username;
+
+//         setTimeout(this.showUsername.bind(this), 1000);
+//     }
+
+//     showUsername() {
+//         console.log(this.username);
+//     }
+// }
+
+// const user = new User("Afnan");
+  </script>
+</html>
