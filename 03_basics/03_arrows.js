@@ -2,8 +2,7 @@ const user = {
     username: "Afnan",
     price: 999,
     welcomessage: function(){
-        console.log(`${this.username} , welcome to wenbsite`);//yha pr jo this lgaea h y current content ko jo bh currly brakets m h isa access kr rha h or is k right way bh yhi h....
-
+        console.log(`${this.username} , welcome to wenbsite`);//this poore object ka reference deta hai. Us object ki properties access karne ke liye hum this.propertyName likhte hain.
         //console.log(this);//Y current content print kra g yni k sra jo kuch h is m username or price m  is k comment hta k kro g to pta chl jae g        
     }
 }

@@ -1,4 +1,5 @@
 // ================================ Arrays ===================================
+//Multiple values stores in one variable (array)
 //()=paranthesis
 //[]=square brackets
 //{}=braces or curly brackets

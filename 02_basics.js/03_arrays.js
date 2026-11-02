@@ -33,6 +33,7 @@ console.log(JsUser["full Name"]); //Output=M Afnan
 console.log(JsUser[mySym]); //Output= mykey1
 //Agr chng krna ho kuch then
 JsUser.email = "hitesh@chatgpt.com"
+Object.freeze(JsUser) //y freeze krta h k jb bh hm log chng krna chah g to y ni ho g or y hmesha ak hi value return krta h jb bh hm log chng krna chah g to y ni ho g
 //Ab agr ap n freeze krna h k y aga kuch chng n ho then (freeze) method use hta h..
 //Object.freeze(JsUser)//IS S Y AGA WLA CHNG NI HO G MTLAB OUTPUT="hitesh@chatgpr.com" {{{{Agr y comments htae g to y freeze ho jay g}}}}
 JsUser.email = "afnan@microsoft.com"
