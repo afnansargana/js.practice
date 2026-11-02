@@ -1,4 +1,5 @@
 // == Switch case ==
+//Y if/else k alternative h.. agr hm k pas multiple condition h to hm switch case ka use kr skte h.. (alternative mtlab is k trha kam krta h)
 //Switch case satatement is given below....
 // switch (key) {   //(key wo value h jo hmy hr bar check krni h..)
 //     case value:

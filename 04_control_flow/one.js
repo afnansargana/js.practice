@@ -1,4 +1,5 @@
 //if (control flow)  if(condition){}  ..>{}  >>>  scope khta hn isa ((AGR IF K CONDITION TRUE H TO ANDR K CODE EXSECUTE HO AGR FALSE HO GA TO NI HO G EXECUTE CODE))
+//Control fflow (is k mtpab y h k code kis condoition m execute ho ga or kis m ni ho ga..)
 //if (true){}
 //==Operators==
 //<,>,<=,>=,== → Values compare karta hai, zaroorat par type conversion bhi karta hai.
@@ -35,7 +36,7 @@ if (balance < 500){
 }else if(balance < 750){
     console.log("less than 750");
 }else if(balance <900){
-    console.log("less than 750");
+    console.log("less than 900");
 }else {
     console.log("less than 1200");
 }//else execute kra g kio k  bki sra match ni krta condition

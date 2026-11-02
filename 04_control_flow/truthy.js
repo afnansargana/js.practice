@@ -26,7 +26,8 @@ if (Object.keys(emptyObj).length === 0) {
 // 0 == ''
 // true
 
-//Nullish Coalesing Operator (??): null undefined
+//Boolean() string ke andar likhe lafz ko nahi dekhta, balkay value ko JavaScript ke truthy/falsy rules ke mutabiq convert karta hai.
+//Nullish Coalesing Operator (??): null undefinedn chk
 let val1;
  val1 = 5 ?? 10 //Output=5
 //val1 = null ?? 10 //output=10
